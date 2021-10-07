@@ -10,15 +10,24 @@
             border: solid 5px grey;
         }
         td, tr{
-            width: 10px;
-            height: 10px;
+            width: 40px;
+            height: 40px;
             border: solid 1px grey;
         }
         tr:nth-child(even) td:nth-child(odd){
             background-color: black;
+            color: white;
         }
         tr:nth-child(odd) td:nth-child(even){
             background-color: black;
+            color: white;
+        }
+        table{
+            counter-reset: list 65;
+        }
+        td::before{
+            counter-increment: list -1;
+            content: counter(list);
         }
         
 
