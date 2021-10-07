@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .flex{
+            display: flex;
+            width: 100%;
+        }
+        .article{
+            flex-direction: column;
+            width: 100%;
+        }
+        .navigation{
+            flex-direction: row;
+            width: 200px;
+            background-color: tomato;
+            margin: 2px;
+        }
+        .article_1{
+            background-color: violet;
+            margin: 2px;
+        }
+        .article_2{
+            background-color: yellow;
+        }
+        .footer{
+            width: auto;
+            background-color:yellowgreen;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="navigation"><strong>Блок навигации</strong>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div class="article">
+             <div class="article_1"><strong>Статья 1</strong><br><br>
+                 <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In nam, eveniet sint maiores dolor tempore similique ipsum, eum esse, necessitatibus cupiditate molestiae fuga laboriosam quasi sit animi aut rem nemo?</span>
+             </div>
+            <div class="article_2"><strong>Статья 2</strong><br><br>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias atque ipsa non officiis reprehenderit repellat, necessitatibus eaque incidunt molestiae odit sunt dolores, sapiente delectus commodi praesentium aut nihil facere quis.</span>
+                <div style="text-align: right;"><img src="icon_mail.png"></div>
+            </div>
+        </div>
+    </div>
+    <div class="flex footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae totam maxime dolorum optio asperiores ut eum ipsa nemo! Nam, eos! Ex iusto omnis qui eligendi accusamus corrupti. Dolorem, repellat.</div>
+    
+</body>
+</html>
