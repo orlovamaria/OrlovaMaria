@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проверка пароля</h1>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+                    <fieldset>
+                        <label>
+                            <input type="password" name="password_1" required placeholder="">&nbsp; <sup>*</sup>&nbsp;Пароль<br>
+                            <input type="password" name="password_2" required placeholder="">&nbsp; <sup>*</sup>&nbsp;Повторите пароль<br><br>
+                            <input type="submit" value="Отправить">
+                        </label>
+                        <br>
+                    </fieldset>
+                </form>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+        $("input:password").keyup(function() {
+            var password_1 = $("input[name='password_1']").val();
+            var password_2 = $("input[name='password_2']").val();
+                if (password_1 != password_2 && password_1 != "" && password_2 != "") {
+                    $("input:password")
+                       .css(
+                        {
+                           border: '2px red solid'
+                        }
+                        );
+                } else {
+                    $("input:password")
+                       .css("border", "2px green solid");
+                }
+    })
+  </script>
+</body>
+</html>
